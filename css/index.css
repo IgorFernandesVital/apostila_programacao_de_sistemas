@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --background-color: #C5BCB1;
+    --primary-color: #848C42;
+    --secondary-color: #6BBEF2;
+    --form-color: #F2EDE4;
+}
+body{
+    font-family: "montserrat", sans-serif;
+    background-color: var(--background-color);
+}
+#container{
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 1000px; 
+    background: red;
+}

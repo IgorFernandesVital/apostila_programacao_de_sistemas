@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+label{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 65px;
+    padding: 17px 0px 0px 25px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    transition: .30s;
+    z-index: 1;
+}
+i{
+    font-size: 25px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(255, 255, 255, 0.70);
+}
+    i:hover{
+        background: rgba(255, 255, 255, 0.10);
+    }
+.fas.fa-bars{
+    display: inherit;
+}
+.fas.fa-times{
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+input{
+    display: none;
+}
+.menu{
+    position:fixed;
+    top: 0;
+    left: -260px;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    transition: .30s;
+    z-index: 100;
+}
+#logo{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 25px;
+   
+    display: block;
+    text-transform: uppercase;
+    font-weight: 900;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    margin-top: 15px;
+    transition: .30s;
+}
+li a{
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px 30px;
+    font-size: 16px;
+    display: block;
+    text-transform: uppercase;
+    transition: .30s;
+}
+    li:hover{
+        background: rgba(255, 255, 255, 0.10);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.9px);
+        -webkit-backdrop-filter: blur(6.9px);
+        backdrop-filter: blur(6.9px);
+        -webkit-backdrop-filter: blur(6.9px);
+    }
+    li:hover > a, label:hover > i{
+            color: white;
+    }
+input:checked ~ label{
+    left:auto;
+    right: 0;
+    padding: 17px 25px 0px 0px;
+}
+input:checked ~ label .fas.fa-bars{
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+input:checked ~ label .fas.fa-times{
+    opacity: 1;
+    visibility:  visible;
+    width: 40px;
+    height: 40px;
+    display: inherit;
+}
+input:checked ~ .menu{
+    left: 0px;
+}
+
+/* Mobile */
+@media only screen and (min-width: 250px){
+    input:checked ~ label{
+        left: 270px;
+    }
+    input:checked ~ .menu{
+        width: 250px;
+        max-width: auto;
+        background: rgba(255, 255, 255, 0.06);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.9px);
+        -webkit-backdrop-filter: blur(6.9px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 0px 16px 16px 0px ; /* top Esquerda, top Direita, bottom direito, bottom esquerdo*/
+        text-shadow: 0 0 2px black;
+    };
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px){
+    label{
+        display: none;
+    }
+    .menu, input:checked ~ .menu{
+        left: 0px;
+        position:fixed;
+        width: 100%;
+        max-width: 2000px;
+        margin: 0 auto;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 0px;
+        background: rgba(255, 255, 255, 0.06);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.9px);
+        -webkit-backdrop-filter: blur(6.9px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        text-shadow: 0 0 2px black;
+    }
+    ul{
+        display: flex;
+    }
+    p{
+        border:0;
+    }
+    li{
+        margin: 0;
+        display:flex;
+        align-items: center;
+    }
+}

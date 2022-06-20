@@ -12,7 +12,6 @@
     --form-color: #F2EDE4;
 }
 body{
-    font-family: "montserrat", sans-serif;
     background-color: var(--background-color);
 }
 #container{

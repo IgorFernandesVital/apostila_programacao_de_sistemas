@@ -5,18 +5,39 @@
     text-decoration: none;
     list-style: none;
 }
+/* #9caa22 */
 :root{
     --background-color: #C5BCB1;
-    --primary-color: #848C42;
+    --link-color: #ac8287;
+    --link-color-hover: #e9b1b7;
     --secondary-color: #6BBEF2;
     --form-color: #F2EDE4;
+    --texto-color: #291d1e;
 }
 body{
     background-color: var(--background-color);
 }
 #container{
+    padding-top: 3%;
     margin-left: 3%;
     margin-right: 3%;
     height: 1000px; 
-    background: red;
+    
+}
+.corpo{
+    padding: 2%;
+    border-radius: 10px 10px 0px 0px ;
+    background-color: var(--form-color);
+}
+.links{
+    color: var(--link-color)
+}
+.links:hover{
+    color: var(--link-color-hover);
+}
+.titulos{
+    color: var(--secondary-color)
+}
+p{
+    color: var(--texto-color)
 }

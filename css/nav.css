@@ -14,7 +14,7 @@ label{
     justify-content: flex-start;
     flex-direction: row;
     transition: .30s;
-    z-index: 1;
+    z-index: 10000;
 }
 i{
     font-size: 25px;
@@ -31,6 +31,7 @@ i{
     backdrop-filter: blur(6.9px);
     -webkit-backdrop-filter: blur(6.9px);
     border: 1px solid rgba(255, 255, 255, 0.70);
+    z-index: 1000;
 }
     i:hover{
         background: rgba(255, 255, 255, 0.10);

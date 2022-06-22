@@ -1,0 +1,22 @@
+footer{
+    background-color: #fff7e8;
+    height: auto;
+    width: 100%;
+    padding: 1%;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+.redesSociais{
+   display: flex;
+}
+.iconesSociais{
+    width: 35px;
+    height: 35px;
+    margin-left: 10.5px;
+    margin-right: 10.5px;
+}
+#textinho{
+    margin-right: 10.5px;
+}

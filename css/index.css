@@ -30,6 +30,7 @@ body{
     padding: 2%;
     border-radius: 10px 10px 0px 0px ;
     background-color: var(--form-color);
+    border: solid 5px #fff7e8;
 }
 .links{
     color: var(--link-color)

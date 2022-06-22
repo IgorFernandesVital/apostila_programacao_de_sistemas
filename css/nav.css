@@ -45,6 +45,7 @@ i{
 input{
     display: none;
 }
+
 .menu{
     position:fixed;
     top: 0;
@@ -59,7 +60,6 @@ input{
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px 25px;
-   
     display: block;
     text-transform: uppercase;
     font-weight: 900;
@@ -131,7 +131,7 @@ input:checked ~ .menu{
 }
 
 /* Desktop */
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 900px){
     label{
         display: none;
     }

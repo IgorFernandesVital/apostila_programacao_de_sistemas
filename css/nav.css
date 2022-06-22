@@ -25,16 +25,13 @@ i{
     display: inherit;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.06);
+    background: var(--secondary-color);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.9px);
-    -webkit-backdrop-filter: blur(6.9px);
-    border: 1px solid rgba(255, 255, 255, 0.70);
     z-index: 1000;
 }
     i:hover{
-        background: rgba(255, 255, 255, 0.10);
+    background: var(--secondary-color-hover);
     }
 .fas.fa-bars{
     display: inherit;
@@ -66,7 +63,7 @@ input{
     display: block;
     text-transform: uppercase;
     font-weight: 900;
-    background: rgba(255, 255, 255, 0.10);
+    background: var(--secondary-color-hover);
     border: 1px solid rgba(255, 255, 255, 0.15);
 }
 ul{
@@ -89,15 +86,11 @@ li a{
     transition: .30s;
 }
     li:hover{
-        background: rgba(255, 255, 255, 0.10);
+        background: var(--secondary-color-hover);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(6.9px);
-        -webkit-backdrop-filter: blur(6.9px);
-        backdrop-filter: blur(6.9px);
-        -webkit-backdrop-filter: blur(6.9px);
     }
     li:hover > a, label:hover > i{
-            color: white;
+        color: white;
     }
 input:checked ~ label{
     left:auto;
@@ -129,10 +122,8 @@ input:checked ~ .menu{
     input:checked ~ .menu{
         width: 250px;
         max-width: auto;
-        background: rgba(255, 255, 255, 0.06);
+        background: var(--secondary-color);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(6.9px);
-        -webkit-backdrop-filter: blur(6.9px);
         border: 1px solid rgba(255, 255, 255, 0.15);
         border-radius: 0px 16px 16px 0px ; /* top Esquerda, top Direita, bottom direito, bottom esquerdo*/
         text-shadow: 0 0 2px black;
@@ -154,11 +145,8 @@ input:checked ~ .menu{
         display: flex;
         justify-content: space-between;
         border-radius: 0px;
-        background: rgba(255, 255, 255, 0.06);
+        background: var(--secondary-color);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(6.9px);
-        -webkit-backdrop-filter: blur(6.9px);
-        border: 1px solid rgba(255, 255, 255, 0.15);
         text-shadow: 0 0 2px black;
     }
     ul{

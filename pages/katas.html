@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Igor Fernandes Vital">
+    <meta name="description" content="Apostila On-line do curso Programação de sistemas, ela foi feita para facilitar a navegação dos tópicos oferecidos no curso.">
+    <link rel="icon" type="imagem/png" href="/assets/ebookapostila.png" />
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="/css/imgSection.css" />
+    <link rel="stylesheet" type="text/css" href="/css/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Apostila: Programação de Sistemas</title>
+   
+  
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label id="checkMenu" for="check">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </label>
+            
+            <div class="menu">
+                <a href="/index.html" id="logo">Programação de sistemas</a>
+                <ul>
+                      <li><a href="/pages/katas.html">Katas</a></li>
+                      <li><a href="/pages/assustosEstudados.html">Assuntos estudados</a></li>
+                      <li><a href="/pages/gitGithub.html">Git e GitHub</a></li>
+                      <li><a href="/pages/teoria.html">Teoria</a></li>
+                  </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="img">
+        <img src="/assets/foto-tratada.png" title="Fabrica de cultura" alt="Fabrica de cultura do Jardim São Luiz - SP">
+    </section>
+
+    <main id="container">
+       <section class="corpo">
+
+        <div>
+            <h1 class="titulos"> Kata </h1>
+        </div>
+
+        <div class="sumario">
+            <a class="links" href="#validadndoUsuario">18. Validando usuário</a>
+            <a class="links" href="#arraysPassandoFor">17. Arrays Passando com for</a>
+            <a class="links" href="#pares">16. Dez primeiros números inteiros pares</a>
+            <a class="links" href="#sequenciafibonacci">15. Sequencia Fibonacci</a>
+            <a class="links" href="#forSomaDezPrimeirosNumeros">14. for Soma dez primeiros números inteiro</a>
+            <a class="links" href="#ifElseMelhorJogador2">13. if else Melhor jogador 2</a>
+            <a class="links" href="#ifElseMelhorJogador">12. if else Melhor jogador</a>
+            <a class="links" href="#ifElseComparandoSenhas">11. if else Comparando senhas</a>
+            <a class="links" href="#ifElseMenorOuMaior">10. if else Menor ou Maior</a>
+            <a class="links" href="#while1a5">09. while números 1 a 5</a>
+            <a class="links" href="#forNumeros6a10">08. for números 6 a 10</a>
+            <a class="links" href="#forNumeros1a5">07. for números 1 a 5</a>
+            <a class="links" href="#forSeuNome10x">06. for seu nome 10x</a>
+            <a class="links" href="#ifElseIdae">05. if else idade</a>
+            <a class="links" href="#areaTerreno">04. Area do terreno</a>
+            <a class="links" href="#textoUsuario">03. Texto usuário</a>
+            <a class="links" href="#variavelAloMundo">02. Variável Alô, mundo!</a>
+            <a class="links" href="#aloMundo">01. Alô mundo</a>
+        </div>
+       
+        <div class="paragrafo">
+            <h4 class="titulos" id="validandoUsuario">Validando Usuário</h4>
+                <p>
+                    Digamos que recebemos, via <code class="variavel">prompt</code>, um nome digitado pelo usuário. Queremos mostrar na tela <code class="string">"Este nome não consta em nossos registros"</code> caso o nome digitado não esteja no vetor. E <code class="string">"Este nome consta em nossos registros"</code> caso contrário.
+                </br>
+                    Como fazer?
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-ccw2ZidqCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos" id="arraysPassandoFor"">Arrays </h4>
+                <p>
+                    Vetores (Arrays) são um tipo de variável que permite armazenar vários valores dentro dela. </br>
+                    Por exemplo, experimente rodar o seguinte código:</br>
+                    <code>
+                        <span class="variavel">let</span> usuarios <span class="pontuacao">=</span> <span class="conchetes">[</span><span class="string">"José"</span><span class="pontuacao">,</span><span class="string">"João"</span><span class="pontuacao">,</span><span class="string">"Silvia"</span><span class="pontuacao">,</span><span class="string">"Claudia"</span><span class="conchetes">]</span><span class="pontuacao">;</span>
+                    </code> </br>
+                    </br> É possível acessar cada valor de um vetor usando um número que corresponde à sua posição no vetor. Usando o vetor acima, tente isto:</br>
+                    <code>
+                        console<span class="pontuacao">.</span><span class="function">log</span><span class="conchetes">(</span><span class="variavel">usuarios</span><span class="conchetes">[</span><span class="number">0</span><span class="conchetes">]</span><span class="conchetes">)</span><span class="pontuacao">;</span> </br>
+                        console<span class="pontuacao">.</span><span class="function">log</span><span class="conchetes">(</span><span class="variavel">usuarios</span><span class="conchetes">[</span><span class="number">1</span><span class="conchetes">]</span><span class="conchetes">)</span><span class="pontuacao">;</span> </br>
+                        console<span class="pontuacao">.</span><span class="function">log</span><span class="conchetes">(</span><span class="variavel">usuarios</span><span class="conchetes">[</span><span class="number">2</span><span class="conchetes">]</span><span class="conchetes">)</span><span class="pontuacao">;</span> </br>
+                        console<span class="pontuacao">.</span><span class="function">log</span><span class="conchetes">(</span><span class="variavel">usuarios</span><span class="conchetes">[</span><span class="number">3</span><span class="conchetes">]</span><span class="conchetes">)</span><span class="pontuacao">;</span> </br>
+                    </code></br>
+                    Para saber quantos elementos um vetor contém, use isto:</br>
+                    <code>
+                        <span class="variavel">let</span> tamanho <span class="pontuacao">=</span> <span class="variavel">usuarios</span><span class="pontuacao">.</span><span class="function">length</span><span class="pontuacao">;
+                    </code></br>
+                    Para ver algo na tela é preciso, claro, usar o <code>console<span class="pontuacao">.</span><span class="function">log</span><span class="conchetes">(</span><span class="conchetes">)</span></code>:
+                    <code>console<span class="pontuacao">.</span><span class="function">log</span><span class="conchetes">(</span><span class="variavel">tamanho</span><span class="conchetes">)</span><span class="pontuacao">;</span> </code>
+                </p>
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos">Arrays passando com for</h4>
+                <p>
+                    Como você usuaria um loop <code class="function">for</code> para listar os elementos desse vetor sem precisar repetir o <code>console<span class="pontuacao">.</span><span class="function">log</span><span class="conchetes">(</span><span class="conchetes">)</span><span class="pontuacao">;</span></code> tantas vezes?
+                </p>
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos" id="pares">Pares</h4>
+                <p>
+                    Usando um loop <code class="function">for</code>, mostre na tela os primeiros dez números inteiros pares.
+                </p>
+                <p class="obs"> 
+                    <strong>Dica:</strong>  faça uma pesquisa sobre o operador módulo (<code>%</code>) e use-o para checar se um número é par. Por exemplo:</br> 
+                    <code>
+                        console<span class="pontuacao">.</span><span class="function">log</span><span class="conchetes">(</span><span class="number">4</span> % <span class="number">2</span> === <span class="number">0</span><span class="conchetes">)</span> <span class="comentario">// retorna true</span> </br>
+                        console<span class="pontuacao">.</span><span class="function">log</span><span class="conchetes">(</span><span class="number">5</span> % <span class="number">2</span> === <span class="number">0</span><span class="conchetes">)</span> <span class="comentario">// retorna false</span>
+                    </code> </br>
+                    <strong>Dica2:</strong>  você pode usar um comando <code class="function">if</code> dentro do loop <code class="function">for</code>.
+                </p>
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos" id="sequenciafibonacci"">Sequencia Fibonacci</h4>
+                <p>
+                    Faça uma pesquisa sobre o que é a sequência de Fibonnaci. Escreva um programa que exiba na tela os cincos primeiros números da sequência de Fibonacci.
+                </p>
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos" id="forSomaDezPrimeirosNumeros"">for Soma dez primeiros números inteiros</h4>
+                <p>
+                    Usando o comando <code class="function">for</code>, mostre na tela a soma dos dez primeiros números inteiros.
+                </p>
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos" id="ifElseMelhorJogador2">if else Melhor jogador 2</h4>
+                <p>
+                    Escreva um programa que pergunte ao usuário <code class="string">"Quem é o maior jogador de futebol de todos os tempos?"</code>. Se o usário responder <code class="string">"Messi"</code> ou <code class="string">"Lionel Messi"</code>, apresentar na tela <code class="string">"Acertou!"</code>. Caso contrário, <code class="string">"Errou"</code>.
+                </p>
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos" id="ifElseMelhorJogador">if else Melhor jogador</h4>
+                <p>
+                    Escreva um programa que pergunte ao usuário <code class="string">"Quem é o maior jogador de futebol de todos os tempos?"</code>. Se o usário responder <code class="string">"Messi"</code>, apresentar na tela <code class="string">"Acertou!"</code>. Caso contrário, <code class="string">"Errou"</code>.
+                </p>
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos" id="ifElseComparandoSenhas">if else Comparando senhas</h4>
+                <p>
+                    Escreva um programa onde uma variável chamada <code>senha</code> tem o valor <code class="number">12345</code>. O programa deve permitir que o usuário digite uma senha e então comparar o que foi digitado com o valor armazenado na variável. Se forem iguais, mostrar na tela <code class="string">"Seja bem vindo(a)"</code>. Caso contrário, <code class="string">"Acesso negado!"</code>.
+                </p>
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos" id="ifElseMenorOuMaior">if else Menor ou Maior</h4>
+                <p>
+                    Escreva um programa que receba um número digitado pelo usuário. Se o número digitado for maior que dez, mostre na tela <code class="string">"O número é mair que dez"</code>. Caso contrário <code class="string">"O número é menor que dez"</code>.
+                </p>
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos" id="while1a5">while números 1 a 5</h4>
+                <p>
+                    usando um loop <code class="function">while</code>, exiba os números de 1 a 5 no console.
+                </p>
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos" id="forNumeros6a10">for números 6 a 10</h4>
+                <p>
+                    usando um loop <code class="function">for</code>, exiba os números de 6 a 10 no console.
+                </p>
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos" id="forNumeros1a5">for números 1 a 5</h4>
+                <p>
+                    usando um loop <code class="function">for</code>, exiba os números de 1 a 5 no console.
+                </p>
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos" id="forSeuNome10x">for seu nome 10x</h4>
+                <p>
+                    usando um loop <code class="function">for</code>, exiba seu nome dez vezes na tela.
+                </p>
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos" id="ifElseIdade">if else Idade</h4>
+                <p>
+                    Declare uma variável <code>idade</code>, que receba uma idade, digitada pelo usuário. Usando um <code class="function">if</code> apresente no console <code class="string">"Acesso negado"</code> ou <code class="string">"Seja bem-vindo(a)</code>, conforme a idade for maior que dezoito ou menor que dezoito.
+                </p>
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos" id="areaTerreno">Area do terreno</h4>
+                <p>
+                    Calcule a área de um terreno, sendo que o usuário é quem vai digitar a largura e o comprimento.
+                </p>
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos" id="textoUsuario">Texto usuário</h4>
+                <p>
+                    Declare uma variável que receba um texto digitado pelo usuário e então passe essa variável para o <code>console<span class="pontuacao">.</span><span class="function">log</span><span class="conchetes">(</span><span class="conchetes">)</span></code>.
+                </p>
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos" id="variavelAloMundo">Variável Alô, mundo!</h4>
+                <p>
+                    Declare uma variável com o valor: <code><span class="string">"Alô, mundo!"</span></code> e então passe essa variável para o <code>console<span class="pontuacao">.</span><span class="function">log</span><span class="conchetes">(</span><span class="string">"Alô, mundo!"</span><span class="conchetes">)</span></code>.
+                </p>    
+        </div>
+
+        <div class="paragrafo">
+            <h4 class="titulos" id="aloMundo">Alô, mundo!</h4>
+            <p>
+                Exiba:  <code><span class="string">"Alô, mundo!"</span></code> no console.
+            </p> 
+        </div>
+
+        </section>
+
+       <footer>
+        <div class="redesSociais">
+            <div clas>
+                <a href="https://github.com/IgorFernandesVital"><img class="iconesSociais" src="/assets/github.png"></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/igor-fernandes-vital/"><img class="iconesSociais" src="/assets/linkedin.png"></a>
+            </div>
+        </div>
+        <div id="textinho">
+            <p> </p>
+        </div>
+       </footer>
+    </div id="container">
+</body>
+</html>

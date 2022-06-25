@@ -131,7 +131,7 @@ input:checked ~ .menu{
 }
 
 /* Desktop */
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 870px){
     label{
         display: none;
     }

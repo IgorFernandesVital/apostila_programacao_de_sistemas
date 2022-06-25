@@ -15,6 +15,17 @@
     --secondary-color-hover: #89caf3;
     --form-color: #F2EDE4;
     --texto-color: #291d1e;
+
+    --code-font: monospace;
+    --code-token-tag: #0069c2;
+    --code-token-punctuation: #9e9e9e;
+    --code-token-conchetes: #ecca06;
+    --code-token-attribute-name: #d30038;
+    --code-token-attribute-value: #007936;
+    --code-token-comment: #9e9e9e;
+    --code-token-default: #1b1b1b;
+    --code-token-selector: #872bff;
+    --code-background-inline: #e5e2e2d2;
 }
 body{
     background-color: var(--background-color);
@@ -41,4 +52,55 @@ body{
 }
 p{
     color: var(--texto-color)
+}
+.sumario a{
+    font-size: 13px;
+    margin: 1%; 
+
+}
+
+.sumario a:hover{
+    border-bottom: solid 1px var(--background-color);
+    transition: 1s;
+}
+
+/* Códigos */
+code{
+    background-color: var(--code-background-inline);
+    color: var(--code-token-default);
+    border-radius: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-family: var(--code-font);
+}
+.variavel{
+    color: var(--code-token-tag);
+    font-family: var(--code-font);
+}
+.pontuacao{
+    color: var(--code-token-punctuation); 
+    font-family: var(--code-font);
+}
+.conchetes{
+    color: var(--code-token-conchetes); 
+    font-family: var(--code-font);
+}
+.function{
+    color: var(--code-token-attribute-name);
+    font-family: var(--code-font);
+}
+.string{
+    color: var(--code-token-attribute-value);
+    font-family: var(--code-font);
+}
+.comentario{
+    color: var(--code-token-comment);
+    font-family: var(--code-font);
+}
+.number{
+    color: var(--code-token-selector);
+    font-family: var(--code-font);
+}
+.paragrafo{
+    margin-top: 15px;
 }
